@@ -64,3 +64,4 @@ C:\Users\Hp\Desktop\Pronia\Pronia\Pronia\obj\Debug\net6.0\refint\Pronia.dll
 C:\Users\Hp\Desktop\Pronia\Pronia\Pronia\obj\Debug\net6.0\Pronia.pdb
 C:\Users\Hp\Desktop\Pronia\Pronia\Pronia\obj\Debug\net6.0\Pronia.genruntimeconfig.cache
 C:\Users\Hp\Desktop\Pronia\Pronia\Pronia\obj\Debug\net6.0\ref\Pronia.dll
+C:\Users\Hp\Desktop\Pronia\Pronia\Pronia\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -9,7 +9,7 @@
                          src="~/assets/images/website-images//@plant.PlantImages.FirstOrDefault(p=>p.IsMain == true)?.Path"
                          alt="Product Images problem" />
                     <img class="secondary-img"
-                         src="~/assets/images/website-images//@plant.PlantImages.FirstOrDefault(p=>p.IsMain==false)?.Path"
+                         src="~/assets/images/website-images//@plant.PlantImages.FirstOrDefault(p=>p.IsMain==null)?.Path"
                          alt="Product Images hover problem" />
                 </a>
                 <div class="product-add-action">
@@ -39,7 +39,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="cart.html"
+                            <a asp-action="addbasket" asp-controller="plants" asp-route-id="@plant.Id"
                                data-tippy="Add to cart"
                                data-tippy-inertia="true"
                                data-tippy-animation="shift-away"

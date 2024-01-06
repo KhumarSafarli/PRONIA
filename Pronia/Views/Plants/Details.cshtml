@@ -1,11 +1,4 @@
-﻿@model Plant
-
-@{
-    IEnumerable<Plant> model = new List<Plant>()
-    {
-        Model
-    };
-}
+﻿@model PlantDetailsVM
 <main class="main-content">
     <div class="breadcrumb-area breadcrumb-height"
          data-bg-image="assets/images/breadcrumb/bg/1-1-1919x388.jpg">
@@ -25,7 +18,7 @@
             </div>
         </div>
     </div>
-   <div class="single-product-area section-space-top-100">
+    <div class="single-product-area section-space-top-100">
         <div class="container">
             <div class="row">
                 @* Images *@
@@ -33,29 +26,65 @@
                     <div class="single-product-img">
                         <div class="swiper-container single-product-slider">
                             <div class="swiper-wrapper">
-                                @foreach (PlantImage plantImage in Model.PlantImages)
-                                {
-                                    <div class="swiper-slide">
-                                        <a href="~/assets/images/website-images/@plantImage.Path" class="single-img gallery-popup">
-                                            <img class="img-full" src="~/assets/images/website-images/@plantImage.Path" alt="Product Image" />
-                                        </a>
-                                    </div>
-                                }
+                                <div class="swiper-slide">
+                                    <a href="~/assets/images/website-images/1-1-570x633.jpg"
+                                       class="single-img gallery-popup">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-1-570x633.jpg"
+                                             alt="Product Image" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="~/assets/images/website-images/1-2-570x633.jpg"
+                                       class="single-img gallery-popup">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-2-570x633.jpg"
+                                             alt="Product Image" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="~/assets/images/website-images/1-3-570x633.jpg"
+                                       class="single-img gallery-popup">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-3-570x633.jpg"
+                                             alt="Product Image" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="~/assets/images/website-images/1-4-570x633.jpg"
+                                       class="single-img gallery-popup">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-4-570x633.jpg"
+                                             alt="Product Image" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-
-                
                         <div class="thumbs-arrow-holder">
                             <div class="swiper-container single-product-thumbs">
                                 <div class="swiper-wrapper">
-                                    @foreach (PlantImage plantIMG in Model.PlantImages)
-                                    {
-                                        <a href="#" class="swiper-slide">
-                                            <img class="img-full" src="~/assets/images/website-images/@plantIMG.Path" alt="Product Thumbnail" />
-                                        </a>
-                                    }
+                                    <a href="#" class="swiper-slide">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-1-570x633.jpg"
+                                             alt="Product Thumnail" />
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-2-570x633.jpg"
+                                             alt="Product Thumnail" />
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-3-570x633.jpg"
+                                             alt="Product Thumnail" />
+                                    </a>
+                                    <a href="#" class="swiper-slide">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/1-4-570x633.jpg"
+                                             alt="Product Thumnail" />
+                                    </a>
                                 </div>
-                             
+                                <!-- Add Arrows -->
                                 <div class="thumbs-button-wrap d-none d-md-block">
                                     <div class="thumbs-button-prev">
                                         <i class="pe-7s-angle-left"></i>
@@ -68,13 +97,11 @@
                         </div>
                     </div>
                 </div>
-
-             
                 <div class="col-lg-6 pt-5 pt-lg-0">
                     <div class="single-product-content">
-                        <h2 class="title">@Model.Name</h2>
+                        <h2 class="title">@Model.Plant.Name</h2>
                         <div class="price-box">
-                            <span class="new-price">$@Model.Price</span>
+                            <span class="new-price">$@Model.Plant.Price</span>
                         </div>
                         <div class="rating-box-wrap">
                             <div class="rating-box">
@@ -108,7 +135,7 @@
                             </select>
                         </div>
                         <p class="short-desc">
-                            @Model.Description
+                            @Model.Plant.Description
                         </p>
                         <ul class="quantity-with-btn">
                             <li class="quantity">
@@ -175,25 +202,25 @@
                             <span class="title">SKU:</span>
                             <ul>
                                 <li>
-                                    <a href="#">@Model.SKU</a>
+                                    <a href="#">@Model.Plant.SKU</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="product-category">
                             <span class="title">Categories :</span>
                             <ul>
-                                    <li>
-                                        <a href="#">
-                                        @string.Join(", ", Model.PlantCategories)
-                                        </a>
-                                    </li>
+                                <li>
+                                    <a href="#">
+                                        @string.Join(", ", Model.Plant.PlantCategories)
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="product-category product-tags">
                             <span class="title">Tags :</span>
                             <ul>
                                 <li>
-                                    <a href="#"> @string.Join(", ", Model.PlantTags)</a>
+                                    <a href="#">Furniture</a>
                                 </li>
                             </ul>
                         </div>
@@ -296,7 +323,7 @@
                              role="tabpanel"
                              aria-labelledby="information-tab">
                             <div class="product-information-body">
-                                @foreach (PlantInformation plantInfo in Model.PlantInformations
+                                @foreach (PlantInformation plantInfo in Model.Plant.PlantInformations
                                 .OrderBy(pi => pi.Information.Order))
                                 {
                                     <h4 class="title">@plantInfo.Information.Key</h4>
@@ -312,7 +339,7 @@
                              aria-labelledby="description-tab">
                             <div class="product-description-body">
                                 <p class="short-desc mb-0">
-                                    @Model.Description
+                                    @Model.Plant.Description
                                 </p>
                             </div>
                         </div>
@@ -445,22 +472,12 @@
                 <div class="col-lg-12">
                     <div class="swiper-container product-slider">
                         <div class="swiper-wrapper">
-                            @foreach (var relatedProduct in model
-                            .Where(p => p.PlantCategories.Any(c => Model.PlantCategories.Contains(c)))
-                            .Where(p => p.Id != Model.Id)
-                            )
-                            {
-                                <div class="swiper-slide">
-                                    @await Html.PartialAsync("_PlantsPV", model)
-                                </div>
-                            }
+                            @await Html.PartialAsync("_PlantsPV", Model.Relateds)
                         </div>
                     </div>
-
-
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
     <!-- Product Area End Here -->
 </main>
