@@ -1,19 +1,30 @@
-﻿@model Slider
+﻿@model SliderUpdateVM
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Update";
 }
 
 <div>
     <h2>
-        Create Slider
+        Update Slider
     </h2>
     <form method="post" enctype="multipart/form-data">
+       
         <div asp-validation-summary="All" class="alert alert-danger"></div>
+        <div class="images">
+            <div class="main-image">
+                <h3>Main image</h3>
+                <img width="200" src="~/assets/images/website-images/@Model.Image" />
+            </div>
+            <div class="bg-image">
+                <h3>Background image image</h3>
+                <img width="200" src="~/assets/images/website-images/@Model.BgImage" />
+            </div>
+        </div>
         <div>
-            <label asp-for="@Model.Photo"></label>
-            <input asp-for="@Model.Photo" class="form-control" />
+            <label asp-for="@Model.MainPhoto"></label>
+            <input asp-for="@Model.MainPhoto" class="form-control" />
             <div>
-                <span asp-validation-for="@Model.Photo">
+                <span asp-validation-for="@Model.MainPhoto">
                 </span>
             </div>
         </div>
@@ -58,10 +69,11 @@
             </div>
         </div>
         <div class="mt-2">
-            <button type="submit" class="btn btn-outline-success">
-                Create
+            <button type="submit" class="btn btn-outline-warning">
+                Update
             </button>
         </div>
     </form>
 </div>
+
 

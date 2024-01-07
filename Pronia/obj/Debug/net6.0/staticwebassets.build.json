@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hmwNMMoCc2fT4Tf4kuuPdCHg2h3FFvJeECJeshzraAw=",
+  "Hash": "7V0U20APtUmHMWE24Jznc2NrECjMC1vs74AbgPpo1i8=",
   "Source": "Pronia",
   "BasePath": "_content/Pronia",
   "Mode": "Default",
@@ -3417,6 +3417,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1.png"
     },
     {
+      "Identity": "C:\\Users\\Hp\\Desktop\\Pronia\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1045ff77-69c4-469c-955d-375e12005a18Image Placeholder (6).png",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\Pronia\\Pronia\\Pronia\\wwwroot\\",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "assets/images/website-images/1045ff77-69c4-469c-955d-375e12005a18Image Placeholder (6).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1045ff77-69c4-469c-955d-375e12005a18Image Placeholder (6).png"
+    },
+    {
       "Identity": "C:\\Users\\Hp\\Desktop\\Pronia\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1.jpg",
       "SourceId": "Pronia",
       "SourceType": "Discovered",
@@ -4095,6 +4112,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\Desktop\\Pronia\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\b27b5eae-db72-40bc-b01e-5be47ddc0275Image Placeholder (3).png",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\Pronia\\Pronia\\Pronia\\wwwroot\\",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "assets/images/website-images/b27b5eae-db72-40bc-b01e-5be47ddc0275Image Placeholder (3).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\b27b5eae-db72-40bc-b01e-5be47ddc0275Image Placeholder (3).png"
     },
     {
       "Identity": "C:\\Users\\Hp\\Desktop\\Pronia\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\b77d8469-69d6-48fa-bca3-6229b3c31a5aImage Placeholder (11).png",
